@@ -1,6 +1,6 @@
 <button>, <datalist>, <fieldset> e <legend>, <form>, <label>
 
-- button \*
+button
 
 <!--
 
@@ -37,9 +37,9 @@
 
 <button></button>
 
-============================================================================================
+===============================================================================
 
-- datalist \*
+datalist
 
 <!--
 
@@ -93,4 +93,101 @@
 
 <input type="color" list="colorsdata" />
 
-==============================================================================================
+================================================================================
+
+fieldset e legend
+
+<!--
+
+<figure>
+  - agrupamento de campos
+  - mesmo proposito
+  - semântico
+  - acessibilidade
+
+  Atributos especiais
+  - disabled
+     - desabilita todos os elementos internos
+     - não serão enviados ao submeter o formulário
+
+     - form
+       - id de um formulário ao qual esse fieldset pertence
+
+       - não precisa estar dentro do formulário
+
+       - name
+         - name do grupo
+
+         <legend>
+           - nome do agrupamento
+           - primeiro elemento dentro do fieldset
+
+-->
+
+<form id="contato" action="">
+  <button>Enviar</button>
+</form>
+
+<fieldset form="contato" name="inputs-contact">
+  <legend>Contato</legend>
+
+<label for="">Nome</label>
+<input type="text" />
+
+</fieldset>
+
+================================================================================
+
+form
+
+<!--
+
+<form>
+
+  - Elemento que definirá um formulário
+  - É um container estilo <section> <footer>
+
+
+    Atributos básicos
+
+    - action // vai enviar os dados para algum lugar se deixar vazio os dados é enviado para a mesma página.
+    - method // post ou GET é um jeito de enviar dados
+
+-->
+
+<form action="" method=""></form>
+
+================================================================================
+
+label
+
+<!--
+
+<label>
+
+  - associar e identificar uma (ou mais) tag de entrada de dados
+  - acessibilidade
+  - clicar para mudar o foco da entrada de dados
+
+  Atributos
+  - for
+     - para fazer a conexão entre este label e a tag de entrada de dados
+
+     - é feita via id do input
+     - só funciona com elementos específicos
+        - button, input, (not hidden), meter, output, progress, select, textarea
+
+-->
+<p>
+  <label for="name">name:</label>
+
+  <input id="name" type="text" />
+</p>
+
+<p>
+  <label for="lastname">lastname:</label>
+
+  <input id="lastname" type="text" />
+</p>
+
+================================================================================
