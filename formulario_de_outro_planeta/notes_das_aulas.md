@@ -1,33 +1,31 @@
+<button>, <datalist>, <fieldset> e <legend>, <form>, <label>
 
-Button,   datalist,    fieldset e legend,    form,    label
-
-
-* button *
+- button \*
 
 <!--
 
   <button>
 
-  - Representa um botão 
+  - Representa um botão
   - usado para enviar formulário
   - É estilizado pelo user agent
 
   Atributos comuns
-  - type        
-      - submit     
-         - reset 
-         - button 
+  - type
+      - submit
+         - reset
+         - button
       - autofocus   // são os atributos a serem usado dentro do elemento type.
       - disable
-      - name 
+      - name
       - value
-      - form   
-              
+      - form
+
 -->
 
 <!--
   Exemplos
-  
+
   <form action="">
     <input type="text" value="" />
     <button type="reset">Limpar</button>
@@ -39,10 +37,9 @@ Button,   datalist,    fieldset e legend,    form,    label
 
 <button></button>
 
-
 ============================================================================================
 
-* datalist *
+- datalist \*
 
 <!--
 
@@ -51,8 +48,8 @@ Button,   datalist,    fieldset e legend,    form,    label
 
   - lista de valores como sugestão a uma tag <input>
 
-  - valores sugestivos e não obrigatórios 
-  
+  - valores sugestivos e não obrigatórios
+
   - Usuário poderão selecionar um dos valores, ou colocar um valor diferente da sugestão.
 
 <datalist id="fruitsdata">
@@ -63,14 +60,14 @@ Button,   datalist,    fieldset e legend,    form,    label
     <option>cherry</option>
 </datalist>
 
-# list 
+# list
  -  Recebe como valor o id de um <datalist> residente no mesmo documento
 
-# Tipo de input suportados 
+# Tipo de input suportados
 
 - text, search, url, tel, email, date, month, week, time, datetime-local, number, range e colocar
 
-* Valores de datalist que não são compatíveis com o tipo do <input> não serão apresentados. 
+* Valores de datalist que não são compatíveis com o tipo do <input> não serão apresentados.
 
 # Tipos de input não suportados (conforme especificado)
 
@@ -96,5 +93,4 @@ Button,   datalist,    fieldset e legend,    form,    label
 
 <input type="color" list="colorsdata" />
 
-
-
+==============================================================================================
