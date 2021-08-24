@@ -1,12 +1,14 @@
+- Atributos globais
+
 <!--
 
-  Atributos 
-  // serve como informações extras 
+  Atributos
+  // serve como informações extras
   // serve para configurações
 
   Atributos Globais mais utilizados
 
-  - class ==> para aplicar estilo css, e acessar no js. 
+  - class ==> para aplicar estilo css, e acessar no js.
 
   - contenteditable ==> vai receber "true" ou "false" para editar algo no documento, ao salvar a paginá perde a modificação
 
@@ -18,12 +20,10 @@
 
   - style ==> serve para aplicar estilização direto no html.
 
-  - tabindex ==> para  navegar no documento sem usar o mouse, utilizando o table do teclado. 
+  - tabindex ==> para  navegar no documento sem usar o mouse, utilizando o table do teclado.
 
   - title ==> serve para definir um titulo.
-  
+
 -->
 
-<!--
-  
--->
+=========================================================
