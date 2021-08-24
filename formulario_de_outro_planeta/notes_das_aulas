@@ -1,0 +1,100 @@
+
+Button,   datalist,    fieldset e legend,    form,    label
+
+
+* button *
+
+<!--
+
+  <button>
+
+  - Representa um botão 
+  - usado para enviar formulário
+  - É estilizado pelo user agent
+
+  Atributos comuns
+  - type        
+      - submit     
+         - reset 
+         - button 
+      - autofocus   // são os atributos a serem usado dentro do elemento type.
+      - disable
+      - name 
+      - value
+      - form   
+              
+-->
+
+<!--
+  Exemplos
+  
+  <form action="">
+    <input type="text" value="" />
+    <button type="reset">Limpar</button>
+  </form>
+
+-->
+
+<button autofocus>Enviar</button>
+
+<button></button>
+
+
+============================================================================================
+
+* datalist *
+
+<!--
+
+<datalist>
+
+
+  - lista de valores como sugestão a uma tag <input>
+
+  - valores sugestivos e não obrigatórios 
+  
+  - Usuário poderão selecionar um dos valores, ou colocar um valor diferente da sugestão.
+
+<datalist id="fruitsdata">
+    <option>apple</option>
+    <option>banana</option>
+    <option>mango</option>
+    <option>orange</option>
+    <option>cherry</option>
+</datalist>
+
+# list 
+ -  Recebe como valor o id de um <datalist> residente no mesmo documento
+
+# Tipo de input suportados 
+
+- text, search, url, tel, email, date, month, week, time, datetime-local, number, range e colocar
+
+* Valores de datalist que não são compatíveis com o tipo do <input> não serão apresentados. 
+
+# Tipos de input não suportados (conforme especificado)
+
+- hidden, password, checkbox, radio, file, ou qualquer tipo de button
+
+# User Agent
+   Verificar a compatiblidade com o browser  https://caniuse.com
+
+-->
+
+<input type="text" list="fruitsdata" placeholder="Escolha uma fruta" />
+
+<datalist id="fruitsdata">
+  <option>mango</option>
+  <option>orange</option>
+  <option>cherry</option>
+</datalist>
+
+<datalist id="colorsdata">
+  <option>#ff0000</option>
+  <option>#00ff00</option>
+</datalist>
+
+<input type="color" list="colorsdata" />
+
+
+
