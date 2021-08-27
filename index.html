@@ -1,23 +1,35 @@
 <!--
 
-   <input> Atributos comuns
-  
-     - autocomplete // vai buscar no navegador algum tipo de dado usado recente e completar para mim.
+  <input type="password" />
 
-     - autofocus //  só usa um por página 
+- coloca uma senha de maneira segura 
+- Esconde o que está sendo digitado no
+campo 
+- o estilo da apresentação do campo, depende do User Agent
 
-     - disables // vai desabilitar um campo para mim 
+# Atributos
 
-     - readonly // é semelhante ao disabled, só muda o aspecto dele 
+- minlength / maxlength
+   * O número mínimo e/ou máximo de caracteres para este campo
 
-     - value // vai colocar algum valor para mim
+- size
+   * o número aceitável de caracteres que esse campo deverá conter
 
-     - form // serve para linkar o input com algum formulário
+ pattern
+    * Expressão regular para validar o que está sendo digitado no campo
+    
+    * Altamente recomendado o uso de um padrão de segurança alta de senhas 
 
-     - name // 
+    * exemplos: queremos que a senha contenha caracteres hexadecimais com o limite de no mínimo 4 e no maxímo 8 caracteres
+         * pattern="[0-9a-fA-F] {4,8}"
 
- -->
+- placeholder 
+    * Mostra um exemplo de texto a ser digitado no campo
 
-<form id="meu-form"></form>
+    - readonly / disabled
+         * Atributo booleano indicando se o campo está habilitado ou não 
 
-<input name="email" type="text" form="meu-form" />
+- required
+    * o campo será obrigatório
+
+-->
