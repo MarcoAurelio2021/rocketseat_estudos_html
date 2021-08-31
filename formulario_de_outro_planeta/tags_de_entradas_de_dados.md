@@ -95,6 +95,23 @@ campo
 - required
     * o campo será obrigatório
 
+    - inputmode
+       * poderá alterar o uso do teclado em smartphones
+       * exemplo: queremos que o cliente só adicione números
+          * inputmode="numeric"
+
+- autocomplete:
+     * on: permite a sugestão de: new-password ou current-password
+     * off: desabilita a opção de autocompletar
+     *  new-password: o navegador poderá sugerir uma nova senha
+
 -->
+
+<form action="">
+  <input type="text" required />
+
+<button type="submit">enviar</button>
+
+</form>
 
 ======================================================
