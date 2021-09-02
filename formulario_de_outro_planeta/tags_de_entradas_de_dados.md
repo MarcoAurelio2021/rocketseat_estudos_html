@@ -115,3 +115,29 @@ campo
 </form>
 
 ======================================================
+
+- email
+
+<!--
+ <input type="email" />
+
+- Espera que o usuário digite um email
+- Irá validar se o valor digitado é um email
+
+
+# Atributos
+
+- placeholder
+- readonly / disabled
+
+tem  varios outros atributos  para ser usado
+* pesquisar no MDN-->
+
+<form action="">
+  <input type="email" placeholder="email" readonly />
+  <button>Enviar</button>
+</form>
+
+======================================================
+
+- URl
