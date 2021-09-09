@@ -17,7 +17,6 @@ Atributos
 
 - Type ==> date, email, file, password...
 - name
-- id
 
 -->
 
@@ -141,3 +140,19 @@ tem  varios outros atributos  para ser usado
 ======================================================
 
 - URl
+  - espera que o usuário digite uma URL
+  - Irá validar se o valor é uma URL
+  - tem seus atributos e combinações a ser feita para melhorar o formulário
+
+<form action="">
+  <input
+    type="url"
+    placeholder="https://www.google.com"
+    title="Somente dominios .com.br"
+  />
+
+<button style="color: darkgreen">enviar</button>
+
+</form>
+
+======================================================
