@@ -156,3 +156,62 @@ tem  varios outros atributos  para ser usado
 </form>
 
 ======================================================
+
+- file
+
+<!-- <input type="file" />
+
+- Usuário poderá escolher um ou mais arquivo para enviar no formulário
+
+# Atributos
+
+- Value
+contém o arquivo a ser enviado
+
+- accept
+   - Descreve que tipo de arquivos a ser aceito
+   - exemplo: .doc, .docx, .pdf, audio*/ image/png, .png
+
+   - e outros a serem estudado no MDN
+
+   # Envio do arquivo
+     - Para envio do arquivo o formulário deverá utilizar o método POST e o atributo enctype como "multpart"/form-data
+    // Somente quando for usar o input tipo file
+
+  -->
+
+<form action="" method="POST" enctype="multipart/form-data">
+  <input type="file" />
+</form>
+
+======================================================
+
+- color
+
+<!-- <input type="color">
+
+- É uma interface para selecionar cor
+- Color picker
+
+# Atributos
+
+- Value: RGB
+  - Se é inválido, o preto será exibido
+
+  - list
+    * o id de uma tag <datalist>/ que está no mesmo documento
+
+    * <datalist> irá conter uma lista de valores pŕe definidos
+
+    * Os valores do <datalist>
+
+    -->
+
+<datalist id="colordata">
+  <option></option>
+  <option></option>
+</datalist>
+
+<input type="color" list="colorsdata" />
+
+======================================================
