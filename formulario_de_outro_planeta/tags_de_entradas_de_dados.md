@@ -215,3 +215,77 @@ contém o arquivo a ser enviado
 <input type="color" list="colorsdata" />
 
 ======================================================
+
+- checkbox
+
+<!--
+
+  <input type="checkbox" />
+
+- Caixas  que podem ser marcadas
+- Seleciona um valor para ser enviado
+- Se não selecionado não será enviado
+
+ # Atributos
+
+ - Globais
+ - Value
+   * valor que aquele campo contém
+   * se não estiver presente, o padrão é 'on'
+
+  - checked // é uma atributo booleano
+    * para deixar o campo marcado por padrão
+
+    <label for="subcribe">Receber notificões</label>
+
+    <input type="checkbox" name="subscribe" id="subscribe" />
+
+  -->
+
+<fieldset>
+  <legend>choose your interest</legend>
+
+  <div>
+    <input type="checkbox" id="Coding" name="interest" value="Coding" checked />
+    <label for="Coding">Coding</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="Music" name="interest" value="Music" />
+    <label for="Music">Music</label>
+  </div>
+</fieldset>
+
+======================================================
+
+- hidden
+
+<!-- <input
+  type="hidden"
+  id="timestamp"
+  name="timestamp"
+  value="1698
+4964189"
+/>
+ - invisivél ao usuário
+ - será enviado com o formulário
+ - não receberá foco
+ - leitores de tela não percebem esse campo  -->
+
+<input type="hidden" value="">
+
+======================================================
+
+- radio
+
+<!-- <input type="radio">
+
+- Projetado para selecionar uma única opção de um grupo de opções
+
+Atributos essenciais
+
+- checked
+- value
+ -->
+
+======================================================
