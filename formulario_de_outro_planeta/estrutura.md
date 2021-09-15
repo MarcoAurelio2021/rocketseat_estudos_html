@@ -150,7 +150,7 @@ form
 
     Atributos básicos
 
-    - action // vai enviar os dados para algum lugar se deixar vazio os dados é enviado para a mesma página.
+    - action // vai enviar os dados para algum lugar. se deixar vazio os dados é enviado para a mesma página.
     - method // post ou GET é um jeito de enviar dados
 
 -->

@@ -289,3 +289,178 @@ Atributos essenciais
  -->
 
 ======================================================
+
+- textarea
+
+<!-- <textarea>
+
+  - permite digitar mais de uma linha
+  - útil para textos grandes
+
+   Atributos
+     - id
+     - name
+     - rows e cols // para definir o tamanho do textarea.
+     - maxlength e minlength // vai definir o tamanho do texto.
+     - wrap // significa que o texto está se embrulhando dentro da caixa...  o padrão é wrap="soft" e tem o qrap="hard"
+
+     ** outros comuns ao input
+        - autocomplete, autofocus, disabled, placeholder,
+        readonly, form, required -->
+
+<textarea></textarea>
+
+======================================================
+
+- select
+
+<!-- <select></select>
+
+- controle que fornece um menu de opoções
+
+<option></option>
+- Contém as opções a serem selecionadas
+- Atributos necessários
+   - value
+
+   Atributos unicos
+   - multiple
+     habilita múltiplas opções
+
+   - size
+     Quando opções visíveis -->
+
+<label for="carselect">Qual o modelo do carro</label>
+
+<br />
+
+<select name="carmodel" id="carselect" multiple size="2">
+  <option value="">Selecione o Carro</option>
+  <option value="Fiat">Uno</option>
+  <option value="Fiat">Toro</option>
+  <option value="Volkswagen">Gol G6</option>
+</select>
+
+======================================================
+
+- optgroup
+
+<!--
+  <optgroup></optgroup>
+
+- vai funcionar dentro de um select, pois vai fazer um agrupamento dos options
+
+ -->
+
+<label for="">please choose one or more pets:</label>
+
+<br />
+
+<select name="Pets" multiple size="4">
+  <optgroup label="4-legged pets">
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster" disabled>Hamster</option>
+  </optgroup>
+  <optgroup label="Flying pets">
+    <option value="parrot">Parrot</option>
+    <option value="macaw">Macaw</option>
+    <option value="albatross">Albatross</option>
+  </optgroup>
+</select>
+
+======================================================
+
+- search
+
+<!-- <input type="search">
+
+  - Para campos de busca
+  - È igual ao campo do tipo 'text' mas poderá ser um pouco diferente dependendo do user agent
+
+  # Atributos
+    - list/ <datalist>
+    - pattern
+    - aria-label  // quando não temos o label, ele vai servir como uma opção... ambos serve para acessebilidade
+
+    <datalist id="searchterms">
+      <option>Mac</option>
+      <option>win</option>
+      <option>Linux</option>
+    </datalist>
+
+    <form action="">
+      <input
+        type="search"
+        name="q"
+        list="searchterms"
+        placeholder="Digite seu termo de busca"
+        size="27"
+        aria-label="Campo de Pesquisa: Digite seu termo de busca"
+      />
+
+      <button>Pesquisa</button>
+    </form>
+
+     -->
+
+<form action="">
+  <label for="">Pesquisar pelo ID</label>
+  <input
+    type="search"
+    name="id"
+    size="5"
+    pattern="[0--9] {2}"
+    title="Digite o Número do ID: 99"
+  />
+  <button>Pesquisar</button>
+</form>
+
+======================================================
+
+- number
+
+<!-- <input type="number">
+
+- Entrada de número
+
+Atributos
+  - min / max // vai definir o mínimo e o máximo de número a ser trabalhado
+  - step // é para pular o número de 1 em 1 ou 100 em 100 step="100"
+
+   também aceita outros atributos normais
+   -->
+
+<input type="number" step="30" />
+
+======================================================
+
+- range
+
+<!-- <input type="range">
+
+- Controle para selecionar um valor númerico
+- Slider ou dial Control
+
+Atributos
+  - min / max
+  - step -->
+
+<input type="range" min="1" max="100" step="5" />
+
+======================================================
+
+- data e hora
+
+<!-- Outros campos
+ ( Mas ainda não tem ótimo suporte )
+
+   olhar em https://caniuse.com
+
+   em alguns brouser não funciona
+
+   type
+       date, datetime-local, month, time, week
+    -->
+
+<input type="date" />
