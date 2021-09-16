@@ -464,3 +464,67 @@ Atributos
     -->
 
 <input type="date" />
+
+======================================================
+
+Exercicio
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="" method="POST">
+        <fieldset style="width: 280px; height: 320px">
+          <legend>Contato</legend>
+
+          <div>
+            <label for="Name"> Nome </label>
+
+            <br />
+            <!-- name="" para quando for enviar o formulário  -->
+            <input
+              type="text"
+              id="Name"
+              name="name"
+              placeholder="Digite seu nome completo"
+            />
+          </div>
+
+          <br />
+
+          <div>
+            <label for="email">Email</label>
+            <br />
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </div>
+
+          <br />
+
+          <div>
+            <label for="Mensage">Mensagem</label>
+            <br />
+
+            <textarea
+              name="mensage "
+              id="Mensage"
+              cols="24"
+              rows="7"
+            ></textarea>
+          </div>
+
+          <br />
+          <br />
+
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+
+  </body>
+</html>

@@ -14,10 +14,13 @@
 
           <div>
             <label for="Name"> Nome </label>
+
             <br />
+            <!-- name="" para quando for enviar o formulário  -->
             <input
               type="text"
               id="Name"
+              name="name"
               placeholder="Digite seu nome completo"
             />
           </div>
@@ -25,9 +28,9 @@
           <br />
 
           <div>
-            <label for="Email">Email</label>
+            <label for="email">Email</label>
             <br />
-            <input type="email" id="Email" placeholder="Digite seu email" />
+            <input type="email" id="email" name="email" placeholder="Email" />
           </div>
 
           <br />
@@ -36,13 +39,18 @@
             <label for="Mensage">Mensagem</label>
             <br />
 
-            <textarea name="" id="Mensage" cols="24" rows="7"></textarea>
+            <textarea
+              name="mensage "
+              id="Mensage"
+              cols="24"
+              rows="7"
+            ></textarea>
           </div>
+
           <br />
           <br />
-          <br />
-          <br />
-          <button>Enviar</button>
+
+          <button type="submit">Enviar</button>
         </fieldset>
       </form>
     </main>
