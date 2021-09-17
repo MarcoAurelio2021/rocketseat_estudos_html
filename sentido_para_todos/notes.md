@@ -1,3 +1,18 @@
+- Seções comuns em documento
+
+<html>
+  - cabeçalho
+  <header></header>
+  - navegação
+  <nav></nav>
+  - conteúdo principal
+  <main></main>
+  - barra lateral
+  <aside></aside>
+  - rodapé
+  <footer></footer>
+</html>
+
 - article
 <!--
 
@@ -117,9 +132,9 @@ header
 
 // nem todos os links da paginá nessessariamente tem que estar dentro de uma tag <nav>.
 // ela é destinada para coisa mais importantes.
-// ela é mais comum npo topo da paginá, as vezes na lateral do site...
+// ela é mais comum no topo da paginá, as vezes na lateral do site...
 // ele seria o principal do site, os outros secundários não necessariamente precisa ser dentro de uma tag <nav>.
-// mas pode ter outro <nav> no site
+// mas pode ter outros <nav> no site
 
 -->
 
