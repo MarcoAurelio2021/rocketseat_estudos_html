@@ -1,13 +1,8 @@
-// manipulando atributos
+// Alterando Estilos
+const element = document.querySelector('body')
 
-const header = document.querySelector('header') // pegando o header que está no HTML.
+element.style.backgroundColor = 'blue' // vai fazer com que eu coloque css em linha, como seu eu fosse no Body e colocasse um estilo.
 
-header.setAttribute('id', 'header') // Aqui estou adicionando um atributo.
+// pode usar qualquer propriedade css.
 
-const headerID = document.querySelector('#header') // aqui crio uma const, e busco pelo atributo que adicionei no documento.
-
-console.log(headerID.getAttribute('class')) // aqui consigo ver o atributo que adicionei.  get: (pegar).
-
-header.removeAttribute('id') // aqui consigo remover um atributo.
-
-header.removeAttribute('class')
+console.log((element.style.backgroundColor = 'blue'))
