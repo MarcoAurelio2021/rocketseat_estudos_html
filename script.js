@@ -1,8 +1,16 @@
-// Alterando Estilos
+// class list
+
 const element = document.querySelector('body')
 
-element.style.backgroundColor = 'blue' // vai fazer com que eu coloque css em linha, como seu eu fosse no Body e colocasse um estilo.
+element.classList.add('active')
 
-// pode usar qualquer propriedade css.
+element.classList.add('green')
 
-console.log((element.style.backgroundColor = 'blue'))
+console.log(element.classList)
+
+element.classList.remove('active')
+
+element.classList.toggle('active')
+element.classList.toggle('green')
+
+// toggle: funciona como um interruptor, se a classe existir ele tira; se a classenão exitir ele adiciona
