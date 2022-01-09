@@ -66,7 +66,7 @@ _/===================================================/_
 
 // class list
 
-const element = document.querySelector('body')
+const element = document.querySelector('body, green') // posso adicionar mais de uma classe.
 
 element.classList.add('active')
 
@@ -79,6 +79,21 @@ element.classList.remove('active')
 element.classList.toggle('active')
 element.classList.toggle('green')
 
-// toggle: funciona como um interruptor, se a classe existir ele tira; se a classenão exitir ele adiciona
+// toggle: funciona como um interruptor, on off, se a classe existir ele tira; se a classenão exitir ele adiciona
 
+_/===================================================/_
+
+### elemento pai
+
+//parentNode
+
+//parentElement
+
+const body = document.querySelector('body')
+
+console.log(body.parentNode) // ou (body.parantElement) vai pegar o elemento pai.
+
+const element = document.querySelector('h1')
+
+console.log(element.parentElement)
 _/===================================================/_
