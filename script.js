@@ -1,31 +1,18 @@
-// navegando pelos elementos filhos
+// navegando pelos elementos
 
-// childNodes : vai considerar os espaços entre meus elementos "text" essa á forma que vai ser apresentada na hora de colocar no console.
+// nextSibling: sibling em tradução são irmãos... e nextSibling é "proximo irmão"
 
-const el = document.querySelector('body')
+// const el = document.querySelector('header')
 
-console.log(el.childNodes)
+// console.log(el.nextSibling)
 
-// children : elimina os espaços vazios, e retorna um HTML Colletion, somente os elementos.
+//nextElementSibling: vai desconsiderar os espaços vazios 
 
-console.log(el.children)
-
-
-// firstChild : vai pegar o primeiro filho, ou seja uma linha vazia, "text" ou o primeiro elemento.
-
-console.log(el.firstChild)
-
-// firstElementChild // vai desconsiderar as linhas  vazias e pegar só o primeiro elemento.
-
-console.log(el.firstElementChild)
+// previousSibling: vai pegar o irmão anterior, considerando os espaços.  // previousElementSibling: vai desconsiderar os espaços, indo direto ao proximo elemento.
 
 
-// lastChild: (ultimo filho) vai pegar o ultimpo filho, não considera linha vazia, mesmo contendo espaço entre o elemento. vai ser sempre o ultimo elemento da linha.
+const el = document.querySelector('body script')
 
-console.log(el.lastChild)
+console.log(el.previousSibling);
 
-
-/*lastElementChild: (ultimo filho), o mesmo se aplica   ( 
-  vai pegar o ultimpo filho, não considera linha vazia, mesmo contendo espaço entre o elemento. vai ser sempre o ultimo elemento da linha.
-  )*/
-console.log(el.lastElementChild)
+console.log(el.previousElementSibling);
